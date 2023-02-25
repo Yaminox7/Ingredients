@@ -1,0 +1,12 @@
+body {
+    background-color: royalblue;
+    font: 32px cursive;
+}
+
+p, a {
+    font-weight: bold;
+}
+
+img {
+    height: 250px;
+}
