@@ -1,0 +1,63 @@
+:root {
+    --active-button-bg-color: rgb(125, 255, 125);
+    --hover-button-bg-color: rgb(125, 230, 125);
+    --button-bg-color: rgb(150, 255, 150);
+    --active-button-border-color: rgb(75, 255, 75);
+    --hover-button-border-color: rgb(75, 230, 75);
+    --button-border-color: rgb(100, 255, 100);
+}
+
+body {
+    background-color: royalblue;
+    font: 32px cursive;
+}
+
+p, a {
+    font-weight: bold;
+}
+
+img {
+    height: 250px;
+}
+
+.hidden {
+    display: none;
+    border: 2mm solid black;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.show {
+    display: block !important;
+}
+
+button {
+    border: 2mm solid var(--button-border-color);
+    border-radius: 5px;
+    background-color: var(--button-bg-color);
+    font-size: 32px;
+    box-shadow: 5px 5px 0 0 #aaaaaa;
+    transition: all 0.4s;
+}
+
+button:hover, button:active {
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 0 0 #777777;
+}
+
+button:hover {
+    border-color: var(--hover-button-border-color);
+    background-color: var(--hover-button-bg-color);
+}
+
+button:active {
+    border-color: var(--active-button-border-color);
+    background-color: var(--active-button-bg-color);
+}
+
+#buttonContainer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
